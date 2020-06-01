@@ -1,0 +1,2 @@
+# MartianClockChallenge2
+ JavaScript
