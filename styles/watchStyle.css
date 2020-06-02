@@ -1,0 +1,224 @@
+
+
+/* 
+font-family: 'Karla Tamil Upright', sans-serif;
+font-family: 'Quicksand', sans-serif; 
+font-family: 'Space Mono', monospace;
+font-family: 'VT323', monospace;
+background : #353535; / #0A0E22
+h1 shadow: #C650D3;
+h2 shadow: #3FD2E7;
+button text: #00DFDD;
+  */
+
+body {
+  background-image: url('../images/nightBackground3.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: black;
+  /*margin: 0;
+  padding: 0;*/
+  font-family: 'DM Mono', monospace;
+  font-weight: normal; 
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+h1{
+	font-family: 'DM Mono', monospace;
+	text-align: center;
+	color: white;
+	border: 1px solid #00B4CE;
+}
+
+h2{
+	font-family: 'DM Mono', monospace;
+	text-align: center;
+	color: white;
+}
+
+#GMT{
+	font-family: 'VT323', monospace;
+	color: #00B4CE;
+	text-align: center;
+}
+/*
+#space{
+	width:100%;
+	height: 100%;
+	margin-top: 0%;
+}
+*/
+
+#planets{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	height: 400px;
+}
+
+#marsBig{
+	margin-left: -1%;
+	margin-top: 330px;
+	grid-column:1;
+}
+
+#marsSmall{
+	margin-left: -100px;
+	margin-top: -100px;
+	grid-column:2;
+}
+
+#earthBig{
+	margin-left: 75px;
+	margin-top: 330px;
+	grid-column:4;
+}
+
+#earthSmall{
+	margin-top: -128px;
+	margin-left: -100px
+	grid-column:4;
+}
+
+/*---------------------------- STOPWATCH ---------------------------- */
+
+#stopwatch{
+	text-align: center;
+	color: white;
+}
+
+#start{
+	width: 150px;
+	background-color: #EC00B8;
+	margin-left: 40%;
+	color: white;
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+}
+
+#stop{
+	width: 150px;
+	background-color: #EC00B8;
+	color: white;
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+}
+
+#launch{
+	width: 150px;
+	background-color: #00B4CE;
+	color: white;
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+	margin-left: 45%;
+}
+
+#falcon {
+	position: absolute;
+	animation: 10s launch linear;
+	animation-play-state: paused;
+}
+
+@keyframes launch {
+	0% {top: 700px; left: 1200px;}
+	15% {top: 500px; left: 1200px;}
+	20% {top: 400px; left: 1100px;}
+	30% {top: 200px; left: 1000px;}
+	40% {top: 500px; left: 900px;}
+	50% {top: 700px; left: 1200px;}
+	51% {transform:scale(-1,1);}
+	75% {top: 100px; left: 200px;}
+	100% {top: 600px; left: 30px; transform:scale(-1,1);}
+}
+/*
+#hoursCircle{
+	width: 650px;
+	height: 692px;
+	margin-top: -5%;
+	margin-left: 32%;
+}
+
+.container2{
+	width: 200px;
+	height: 80px;
+	background-color: red;
+	margin-left: 1200px;
+	margin-top: -80px;
+	border: 1px solid #F200B7;
+}
+
+#dateBox{
+	background-color: red;
+	color: white;
+	width: 100px;
+	margin-left: 1250px;
+	text-align: center;
+}*/
+
+/* ----------------------------------INFO SCREEN  ---------------------------------- */
+
+.container1{
+	width: 1100px;
+	height: 280px;
+	background-color: #09061D;
+	margin-left: 302px;
+	margin-top: -293px;
+	border: 1px solid #F200B7;
+	color: white;
+}
+
+#GMT{
+	font-family: 'VT323', monospace;
+	color: white;
+	margin-left: 30px;
+}
+
+#daysOnMars{
+	color: yellow;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+
+
+/*
+
+#hour{
+	color: white;
+}
+
+#days{
+	color: yellow;
+}
+
+
+#earthDays{
+	color: green;
+}
+
+#marsDays{
+	color: pink;
+}
+
+/*.camera1{
+	position: absolute;
+	margin-left: 0;
+	margin-top: -350px;
+}
+
+.camera2{
+	position: absolute;
+	margin-left: 500px;
+	margin-top: -350px;
+}
+
+.camera3{
+	position: absolute;
+	margin-left: 940px;
+	margin-top: -350px;
+}
+*/
+
+
+
+
